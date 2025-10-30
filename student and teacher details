@@ -1,0 +1,28 @@
+
+class Student:
+    def __init__(self):
+        self.name = ""
+        self.age = 0
+        self.usn = ""
+        self.address = ""
+
+    # Function to get student details
+    def get_details(self):
+        self.name = input("Enter Name: ")
+        self.age = int(input("Enter Age: "))
+        self.usn = input("Enter USN: ")
+        self.address = input("Enter Address: ")
+
+    # Function to display student details
+    def display_details(self):
+        print("\n--- Student Details ---")
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"USN: {self.usn}")
+        print(f"Address: {self.address}")
+
+
+# Main program
+s = Student()
+s.get_details()
+s.display_details()
